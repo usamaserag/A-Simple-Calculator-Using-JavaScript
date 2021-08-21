@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/styles.css" />
+    <script src="./static/js/script.js"></script>
+</head>
+
+<body>
+    <h1>JavaScript Calculator</h1>
+
+    <div class="calculator">
+        <div class="screen">
+            <p id="numbers"></p>
+        </div>
+        <div class="flex-style">
+            <button id="clear" onclick="clearScreen()" class="btn_flex">C</button>
+            <button id="delete" onclick="deleteLast()">Del</button>
+            <button data-num="/" data-type="opr" onclick="printnum(this)">/</button>
+        </div>
+        <div class="flex-style">
+            <button data-num="7" onclick="printnum(this)">7</button>
+            <button data-num="8" onclick="printnum(this)">8</button>
+            <button data-num="9" onclick="printnum(this)">9</button>
+            <button data-num="+" data-type="opr" onclick="printnum(this)">+</button>
+        </div>
+        <div class="flex-style">
+            <button data-num="4" onclick="printnum(this)">4</button>
+            <button data-num="5" onclick="printnum(this)">5</button>
+            <button data-num="6" onclick="printnum(this)">6</button>
+            <button data-num="-" data-type="opr" onclick="printnum(this)">-</button>
+        </div>
+        <div class="flex-style">
+            <button data-num="1" onclick="printnum(this)">1</button>
+            <button data-num="2" onclick="printnum(this)">2</button>
+            <button data-num="3" onclick="printnum(this)">3</button>
+            <button data-num="*" data-type="opr" onclick="printnum(this)">*</button>
+        </div>
+        <div class="flex-style">
+            <button data-num="." onclick="printnum(this)">.</button>
+            <button data-num="0" onclick="printnum(this)">0</button>
+            <button data-num="00" onclick="printnum(this)">00</button>
+
+            <button onclick="equal()">=</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
